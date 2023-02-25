@@ -14,7 +14,6 @@ def test_add_cart():
 
 def test_delete_cart(register):
     register.open('')
-    resource = demoshop.post('/addproducttocart/catalog/31/1/1')
     register.element('.ico-cart').click()
     register.element('.qty-input').clear().send_keys(0).press_enter()
 
